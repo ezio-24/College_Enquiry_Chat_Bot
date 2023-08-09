@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background-color: rgba(223, 242, 247, .5);
+	height: 100%;
+	margin: 0;
+}
+
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.container {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.chat {
+	height: 400px;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+} 
+
+::-webkit-input-placeholder { 
+	color: .711 
+}
+ 
+input { 
+	border: 1; 
+	padding: 15px; 
+	margin-left: auto;
+	border-radius: 10px; 
+	border-color:Blue;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#bot {
+	margin-left: auto;
+	background-color: #5297ff;
+    border-radius: 20px;
+    color: white;
+    padding-top:15px;
+    padding-bottom:15px;
+    width: 300px;
+    word-wrap: break-word;
+    text-align:left;   
+    
+}
+
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+	monospace;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+	padding-top:15px;
+    padding-bottom:15px;
+ word-wrap: break-word;   
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .container {
+		flex-direction: column; 
+		justify-content: flex-start;
+	}
+	.chat {
+		width: 75vw;
+		margin: 10vw;
+	}
+}
+
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.collapsible {
+    background-color: rgb(239,170,68);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
